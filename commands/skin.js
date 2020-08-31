@@ -14,7 +14,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                 .setTitle('__**Skin**__')
                 .setDescription("**Username: " + args[0] + "**" + "\n Save the image in order to select \n it as your own.")
-                .setFooter('Hypixel Discord Test Bot | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                .setFooter('Hystacks | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .setColor(0xFFA500)
                 .setImage(`https://crafatar.com/renders/body/${uuid}`)
                 .setThumbnail(`https://crafatar.com/skins/${uuid}`)

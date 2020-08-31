@@ -61,8 +61,8 @@ module.exports = {
         message.channel.send("Look out, splash incoming!") 
 
             const embed = new MessageEmbed()
-            .setTitle('__**Username History**__')
-            .setFooter('Hypixel Discord Test Bot | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+            .setTitle('__**Splash**__')
+            .setFooter('Hystacks | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
             .setColor(0xFFA500)
             .setTitle('Time for a splash!')
             .setThumbnail("https://pa1.narvii.com/5753/a851ba9b79f91bbdbe808583f67db3252ad92552_00.gif")

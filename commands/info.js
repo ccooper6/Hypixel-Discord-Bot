@@ -19,7 +19,7 @@ module.exports = {
             { name: ":stopwatch: Ping:", value: "`" + `${Math.floor(message.createdTimestamp - Date.now())} ms` + "`", inline: false}
         )
         .setColor(0xFFA500)
-        .setFooter('Hypixel Discord Test Bot | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+        .setFooter('Hystacks | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
 
         message.channel.send(embed)
 

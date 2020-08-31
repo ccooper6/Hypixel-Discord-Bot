@@ -44,7 +44,7 @@ module.exports = {
             const embed = new MessageEmbed()
                 .setTitle('__**Hypixel Stats**__')
                 .setDescription("**[" + rank + "]" + " " + player.displayname + "**")
-                .setFooter('Hypixel Discord Test Bot | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                .setFooter('Hystacks | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .setColor(0xFFA500)
                 .addField("**Completed Achievements**", "`" + (player.achievementsOneTime).length + "`", true)
                 .addField("**Achievement Points**", "`" + player.achievementPoints + "`", true)

@@ -16,7 +16,7 @@ module.exports = {
 
                 .setTitle('__**UUID**__')
                 .setDescription("**Username: " + args[0] + "**")
-                .setFooter('Hypixel Discord Test Bot | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                .setFooter('Hystacks | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .setColor(0xFFA500)
                 .addField("UUID", "`" + uuid + "`", false)
                 .addField("Trimmed UUID","`" + uuid1 + "`", false)
