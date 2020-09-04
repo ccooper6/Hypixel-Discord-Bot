@@ -5,7 +5,7 @@ module.exports = {
 	description: 'Splash!',
 	async execute(message, args) {
 
-            if(!message.member.roles.cache.find(r => r.name === "God Splasher" || "Big Boy Splasher")) return message.channel.send('Sorry you do not have permission to run that command, for help do !help')
+            if(!message.member.roles.cache.find(r => r.name === "God Splasher")) return message.channel.send('Sorry you do not have permission to run that command, for help do !help')
          .then(message => message.delete({timeout: 7500}))
 
         args.join(' ')
