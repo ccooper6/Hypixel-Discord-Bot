@@ -83,5 +83,5 @@ client.on('ready', async () => {
 //Bot Token//
 
 //NzQ4MDY3MTY2OTUxMTc4MzAw.X0YB1w.O2yeqWVfZw7395c2OP9GWODaZNg
-client.login('NzQ5ODk0ODU5NTEwMjUxNTYw.X0yoAg.5wPYdQiyk_BZ3PmFJHDrnP94Gjg')
-//client.login(process.env.token);
+//client.login('NzQ5ODk0ODU5NTEwMjUxNTYw.X0yoAg.5wPYdQiyk_BZ3PmFJHDrnP94Gjg')
+client.login(process.env.token);
