@@ -5,14 +5,24 @@ module.exports = {
 	description: 'Playerinfo!',
 	execute(message, fetch, args) {
 
+        if(!args[0]) {
+
+            let embed = new MessageEmbed()
+
+                .setTitle(':skull_crossbones: Error')
+                .setColor(0xFFA500)
+                .setFooter("Hystats | Made by BlobFish#9669", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                .addFields(
+                    { name: "\u200b\n", value: "*Argument not detected, please specify a valid username*\n\u200b", inline: true}
+                )
+
+            message.channel.send(embed)
+            return;
+        }
+
         fetch(`https://api.hypixel.net/player?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0&name=${args[0]}`)
         .then(result => result.json())
         .then(({ player }) => {
-
-            if(!args[0]) {
-                message.channel.send("Please provide a username")
-                return;
-            }
 
             let date = new Date(player.firstLogin).toDateString()
 
@@ -42,17 +52,19 @@ module.exports = {
                 else if (session.online === true) online1 = 'Online';
 
             const embed = new MessageEmbed()
-                .setTitle('__**Hypixel Stats**__')
-                .setDescription("**[" + rank + "]" + " " + player.displayname + "**")
-                .setFooter('Hystacks | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                .setTitle(':bar_chart: Hypixel Statistics')
+                .setDescription("***[" + rank + "]" + " " + player.displayname + "***")
+                .setFooter('Hystats | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .setColor(0xFFA500)
                 .addField("**Completed Achievements**", "`" + (player.achievementsOneTime).length + "`", true)
                 .addField("**Achievement Points**", "`" + player.achievementPoints + "`", true)
-                .addField("**Karma**", "`" + player.karma + "`", false)
+                .addField("**Karma**", "`" + player.karma + "`", true)
                 .addField("**Network Level**", "`" + exp + "`", true)
                 .addField("**XP To Levelup**", "`" + exp1 + "`", true)
-                .addField("**Online Status**", "`" + online1 + "`", false)
-                .addField("**First Login**", "`" + date + "`", false)
+                .addField("\u200b", "\u200b", true)
+                .addField("**Online Status**", "`" + online1 + "`", true)
+                .addField("**First Login**", "`" + date + "`", true)
+                .addField("\u200b", "\u200b", true)
                 .setThumbnail(data.player.avatar)
 
             message.channel.send(embed)

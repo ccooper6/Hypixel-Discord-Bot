@@ -49,7 +49,7 @@ client.on('ready', async () => {
         const args = message.content.slice(prefix.length).split(/ +/);
         const command = args.shift().toLowerCase();
         
-           if(command === 'hyinfo') {
+           if(command === 'hystats') {
             client.commands.get('playerinfo').execute(message, fetch, args); 
            }
            else if(command === 'info') {
@@ -64,11 +64,17 @@ client.on('ready', async () => {
            else if(command === 'ign') {
                client.commands.get('username').execute(message, fetch, args);
            }
-           else if(command === 'splash') {
-            client.commands.get('splash').execute(message, args);
-           }
            else if(command === 'guild') {
-            client.commands.get('guild').execute(message, fetch, args);
+             client.commands.get('guild').execute(message, fetch, args);
+           }
+           else if(command === 'help') {
+            client.commands.get('help').execute(message, fetch, args);
+           }
+          else if(command === 'support') {
+            client.commands.get('support').execute(message, client);
+            }
+           else if(command === 'invite') {
+            client.commands.get('invite').execute(message, client);
            }
     })
 })
@@ -77,4 +83,5 @@ client.on('ready', async () => {
 //Bot Token//
 
 //NzQ4MDY3MTY2OTUxMTc4MzAw.X0YB1w.O2yeqWVfZw7395c2OP9GWODaZNg
-client.login(process.env.token);
+client.login('NzQ5ODk0ODU5NTEwMjUxNTYw.X0yoAg.5wPYdQiyk_BZ3PmFJHDrnP94Gjg')
+//client.login(process.env.token);
