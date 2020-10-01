@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
 	name: 'invite',
 	description: 'Invite!',
-	async execute(message, client) {
+	async execute(message) {
 
         const embed = new MessageEmbed()
             .setTitle(':robot: Bot Invite')

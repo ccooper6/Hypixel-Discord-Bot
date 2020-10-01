@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
 	name: 'support',
 	description: 'Support!',
-	async execute(message, client) {
+	async execute(message) {
 
         const embed = new MessageEmbed()
             .setTitle(':handshake: Support Server')

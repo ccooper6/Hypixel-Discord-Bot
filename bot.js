@@ -49,33 +49,42 @@ client.on('ready', async () => {
         const args = message.content.slice(prefix.length).split(/ +/);
         const command = args.shift().toLowerCase();
         
-           if(command === 'hystats') {
+            if(command === 'hystats') {
             client.commands.get('playerinfo').execute(message, fetch, args); 
-           }
-           else if(command === 'info') {
-            client.commands.get('info').execute(message, client);
-           }
-           else if(command === 'uuid') {
-            client.commands.get('uuid').execute(message, fetch, args); 
-           }
-           else if(command === 'skin') {
-            client.commands.get('skin').execute(message, fetch, args); 
-           }
-           else if(command === 'ign') {
-               client.commands.get('username').execute(message, fetch, args);
-           }
-           else if(command === 'guild') {
-             client.commands.get('guild').execute(message, fetch, args);
-           }
-           else if(command === 'help') {
-            client.commands.get('help').execute(message, fetch, args);
-           }
-          else if(command === 'support') {
-            client.commands.get('support').execute(message, client);
             }
-           else if(command === 'invite') {
-            client.commands.get('invite').execute(message, client);
-           }
+            else if(command === 'info') {
+            client.commands.get('info').execute(message, client);
+            }
+            else if(command === 'uuid') {
+            client.commands.get('uuid').execute(message, fetch, args); 
+            }
+            else if(command === 'skin') {
+            client.commands.get('skin').execute(message, fetch, args); 
+            }
+            else if(command === 'ign') {
+               client.commands.get('username').execute(message, fetch, args);
+            }
+            else if(command === 'guild') {
+             client.commands.get('guild').execute(message, fetch, args);
+            }
+            else if(command === 'help') {
+            client.commands.get('help').execute(message);
+            }
+            else if(command === 'support') {
+            client.commands.get('support').execute(message);
+            }
+            else if(command === 'invite') {
+            client.commands.get('invite').execute(message);
+            }
+            else if(command === 'bug') {
+                client.commands.get('bug').execute(message, client);
+            }
+            else if(command === 'suggestion') {
+                client.commands.get('suggestion').execute(message, client);
+            }
+            else if(command === 'watchdog') {
+                client.commands.get('watchdog').execute(message, fetch);
+            }
     })
 })
 

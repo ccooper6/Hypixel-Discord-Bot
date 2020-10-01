@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
 	name: 'help',
 	description: 'Help!',
-	async execute(message, client) {
+	async execute(message) {
 
         const helpembed = new MessageEmbed()
             .setTitle(':heart: Help')
@@ -34,7 +34,7 @@ module.exports = {
                 .setFooter('Hystats | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .addFields(
                     
-                    { name: "\u200b\n" + "*Statistic Commands are used to show information related to Hypixel*" + "\n\u200b", value: "`!hystats [IGN]`\nShows Hypixel statistics for a given player\n\n`!guild [Guild Name]`\nShows Hypixel statistics for a given guild", inline: false},
+                    { name: "\u200b\n" + "*Statistic Commands are used to show information related to Hypixel*" + "\n\u200b", value: "`!hystats [IGN]`\nShows Hypixel statistics for a given player\n\n`!guild [Guild Name]`\nShows Hypixel statistics for a given guild\n\n`!watchdog`\nShows Watchdog statistics", inline: false},
                     
             )
         emojis.edit(statsembed)
@@ -59,7 +59,7 @@ module.exports = {
                 .setColor(0xFFA500)
                 .setFooter('Hystats | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .addFields(
-                    { name: "\u200b\n" + "*Bot Commands are used to show information about the bot and for general assistance*" + "\n\u200b", value: "`!help`\nSends this help message\n\n`!info`\nSends a message containing information about the bot\n\n`!invite`\nSends a message containing an invite link for the bot\n\n`!support`\nSends a message containing an invite link to support server", inline: false},
+                    { name: "\u200b\n" + "*Bot Commands are used to show information about the bot and for general assistance*" + "\n\u200b", value: "`!help`\nSends this help message\n\n`!info`\nSends a message containing information about the bot\n\n`!invite`\nSends a message containing an invite link for the bot\n\n`!support`\nSends a message containing an invite link to support server\n\n`!bug`\nGo through the steps of reporting a bug\n\n`!suggestion`\nGo through the steps of suggesting something new", inline: false},
             )
         emojis.edit(botembed)
         r.users.remove(user)
