@@ -42,55 +42,55 @@ client.on('ready', async () => {
 
     console.log(`\n` + "✅ Connection made to Discord!")
     console.log("✅ Connected as " + client.user.tag)
+    
+})
 
-    client.on('message', async message => {
-        if (!message.content.startsWith(prefix) || message.author.bot) return;
+client.on('message', async message => {
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-        const args = message.content.slice(prefix.length).split(/ +/);
-        const command = args.shift().toLowerCase();
+    const args = message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift().toLowerCase();
         
-            if(command === 'hystats') {
-            client.commands.get('playerinfo').execute(message, fetch, args); 
-            }
-            else if(command === 'info') {
-            client.commands.get('info').execute(message, client);
-            }
-            else if(command === 'uuid') {
-            client.commands.get('uuid').execute(message, fetch, args); 
-            }
-            else if(command === 'skin') {
-            client.commands.get('skin').execute(message, fetch, args); 
-            }
-            else if(command === 'ign') {
-               client.commands.get('username').execute(message, fetch, args);
-            }
-            else if(command === 'guild') {
-             client.commands.get('guild').execute(message, fetch, args);
-            }
-            else if(command === 'help') {
-            client.commands.get('help').execute(message);
-            }
-            else if(command === 'support') {
-            client.commands.get('support').execute(message);
-            }
-            else if(command === 'invite') {
-            client.commands.get('invite').execute(message);
-            }
-            else if(command === 'bug') {
-                client.commands.get('bug').execute(message, client);
-            }
-            else if(command === 'suggestion') {
-                client.commands.get('suggestion').execute(message, client);
-            }
-            else if(command === 'watchdog') {
-                client.commands.get('watchdog').execute(message, fetch);
-            }
-    })
+        if(command === 'hystats') {
+        client.commands.get('playerinfo').execute(message, fetch, args); 
+        }
+        else if(command === 'info') {
+        client.commands.get('info').execute(message, client);
+        }
+        else if(command === 'uuid') {
+        client.commands.get('uuid').execute(message, fetch, args); 
+        }
+        else if(command === 'skin') {
+        client.commands.get('skin').execute(message, fetch, args); 
+        }
+        else if(command === 'ign') {
+        client.commands.get('username').execute(message, fetch, args);
+        }
+        else if(command === 'guild') {
+        client.commands.get('guild').execute(message, fetch, args);
+        }
+        else if(command === 'help') {
+        client.commands.get('help').execute(message);
+        }
+        else if(command === 'support') {
+        client.commands.get('support').execute(message);
+        }
+        else if(command === 'invite') {
+        client.commands.get('invite').execute(message);
+        }
+        else if(command === 'bug') {
+        client.commands.get('bug').execute(message, client);
+        }
+        else if(command === 'suggestion') {
+        client.commands.get('suggestion').execute(message, client);
+        }
+        else if(command === 'watchdog') {
+        client.commands.get('watchdog').execute(message, fetch);
+        }
 })
 
 
 //Bot Token//
 
-//NzQ4MDY3MTY2OTUxMTc4MzAw.X0YB1w.O2yeqWVfZw7395c2OP9GWODaZNg
-//client.login('NzQ5ODk0ODU5NTEwMjUxNTYw.X0yoAg.5wPYdQiyk_BZ3PmFJHDrnP94Gjg')
+
 client.login(process.env.token);
