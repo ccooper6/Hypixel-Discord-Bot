@@ -87,6 +87,9 @@ client.on('message', async message => {
         else if(command === 'watchdog') {
         client.commands.get('watchdog').execute(message, fetch);
         }
+        else if(command === 'playercount') {
+        client.commands.get('playercount').execute(message, fetch);
+        }
 })
 
 
