@@ -34,7 +34,7 @@ module.exports = {
                 .setFooter('Hystats | Made by BlobFish#9669', 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .addFields(
                     
-                    { name: "\u200b\n" + "*Statistic Commands are used to show information related to Hypixel*" + "\n\u200b", value: "`!hystats [IGN]`\nShows Hypixel statistics for a given player\n\n`!guild [Guild Name]`\nShows Hypixel statistics for a given guild\n\n`!watchdog`\nShows Watchdog statistics", inline: false},
+                    { name: "\u200b\n" + "*Statistic Commands are used to show information related to Hypixel*" + "\n\u200b", value: "`!hystats [IGN]`\nShows Hypixel statistics for a given player\n\n`!guild [Guild Name]`\nShows Hypixel statistics for a given guild\n\n`!watchdog`\nShows Watchdog statistics\n\n`!playercount`\nShows the current Hypixel Player Count, including individual games", inline: false},
                     
             )
         emojis.edit(statsembed)
