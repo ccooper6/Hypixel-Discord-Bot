@@ -61,7 +61,7 @@ module.exports = {
                 .addField("**Karma**", "`" + player.karma + "`", true)
                 .addField("**Network Level**", "`" + exp + "`", true)
                 .addField("**XP To Levelup**", "`" + exp1 + "`", true)
-                .addField("\u200b", "\u200b", true)
+                .addField("**Friends**", "`" + (json.records).length + "`", true)
                 .addField("**Online Status**", "`" + online1 + "`", true)
                 .addField("**First Login**", "`" + date + "`", true)
                 .addField("\u200b", "\u200b", true)
