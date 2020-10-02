@@ -47,6 +47,11 @@ module.exports = {
             .then(result => result.json())
             .then(({ session }) => {
 
+            
+            fetch(`https://api.hypixel.net/friends?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0&uuid=${uuid}`)
+            .then(res => res.json())
+            .then(( json ) => {
+
                 let online1 = 'Could not connect to API'
                 if (session.online === false)  online1 = 'Not Online';
                 else if (session.online === true) online1 = 'Online';
@@ -68,8 +73,8 @@ module.exports = {
                 .setThumbnail(data.player.avatar)
 
             message.channel.send(embed)
-
-                })
+            })
+            })
             })
         })
         .catch(err => {
