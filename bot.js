@@ -8,6 +8,7 @@ client.commands = new Discord.Collection();
 const ascii = require('ascii-table');
 const table = new ascii().setHeading('Command', 'Status');
 const fetch = require('node-fetch')
+const Canvas = require('canvas');
 
 
 //Fetch Commands//
@@ -89,6 +90,9 @@ client.on('message', async message => {
         }
         else if(command === 'playercount') {
         client.commands.get('playercount').execute(message, fetch);
+        }
+        else if(command === 'inventory') {
+        client.commands.get('inventory').execute(message, fetch, args, Canvas, fs);
         }
 })
 
