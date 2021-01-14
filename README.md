@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/ambmt/Hypixel-Discord-Bot">
+  <a href="https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
