@@ -2,15 +2,8 @@
 
 This is a discord bot dedicated to hypixel
 
-## Installation
-
-To host this, there is two options:
-Self-Host(Not recommended)
-Server host.
-
-Self Hosting:
-To self host,
-
+# Schedule
+Currently this is a side project between two developers, however feel free to try help us!
 
 
 ## Contributing
