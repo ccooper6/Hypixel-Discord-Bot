@@ -1,18 +1,10 @@
 
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/ambmt/repo_name">
+  <a href="https://github.com/ambmt/Hypixel-Discord-Bot">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -21,14 +13,14 @@
   <p align="center">
     An open source hypixel bot to make your life easier :)
     <br />
-    <a href="https://github.com/ambmt/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ambmt/Hypixel-Discord-Bot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ambmt/repo_name">View Demo</a>
+    <a href="https://github.com/ambmt/Hypixel-Discord-Bot">View Demo</a>
     ·
-    <a href="https://github.com/ambmt/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/ambmt/Hypixel-Discord-Bot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ambmt/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/ambmt/Hypixel-Discord-Bot/issues">Request Feature</a>
   </p>
 </p>
 
