@@ -5,11 +5,11 @@ module.exports = {
 	description: 'PlayerCount!',
 	async execute(message, fetch) {
 
-        fetch(`https://api.hypixel.net/gameCounts?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0`)
+        fetch(`https://api.hypixel.net/gameCounts?key=API_KEY`)
         .then(res => res.json())
         .then(( json ) => {
 
-            fetch(`https://api.hypixel.net/gameCounts?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0`)
+            fetch(`https://api.hypixel.net/gameCounts?key=API_KEY`)
             .then(result => result.json())
             .then(({ games }) => {
 

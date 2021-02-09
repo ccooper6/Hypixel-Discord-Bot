@@ -20,7 +20,7 @@ module.exports = {
             return;
         }
 
-        fetch(`https://api.hypixel.net/player?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0&name=${args[0]}`)
+        fetch(`https://api.hypixel.net/player?key=API-KEY&name=${args[0]}`)
         .then(result => result.json())
         .then(({ player }) => {
 
@@ -43,12 +43,12 @@ module.exports = {
 
                 const uuid = data.player.id
 
-            fetch(`https://api.hypixel.net/status?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0&uuid=${uuid}`)
+            fetch(`https://api.hypixel.net/status?key=API-KEY&uuid=${uuid}`)
             .then(result => result.json())
             .then(({ session }) => {
 
             
-            fetch(`https://api.hypixel.net/friends?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0&uuid=${uuid}`)
+            fetch(`https://api.hypixel.net/friends?key=API-KEY&uuid=${uuid}`)
             .then(res => res.json())
             .then(( json ) => {
 

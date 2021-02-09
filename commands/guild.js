@@ -12,7 +12,7 @@ module.exports = {
 
                 .setTitle(':skull_crossbones: Error')
                 .setColor(0xFFA500)
-                .setFooter("Hystats | Made by BlobFish#9669", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                .setFooter("Hystats | Made by ambmt#6969", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                 .addFields(
                     { name: "\u200b\n", value: "*Argument not detected, please specify a valid guild*\n\u200b", inline: true}
                 )
@@ -21,7 +21,7 @@ module.exports = {
         return
         }
 
-        fetch(`https://api.hypixel.net/guild?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0&name=${args1}`)
+        fetch(`https://api.hypixel.net/guild?key=API-KEY&name=${args1}`)
         .then(result => result.json())
         .then(({ guild }) => {
 
@@ -74,7 +74,7 @@ module.exports = {
             .setTitle(':bar_chart: Guild Statistics')
             .setDescription(`***[${guild.tag}] ${guild.name}***\n\n*Note: React to the emojis to scroll through pages*\n\u200b`)
             .setColor(0xFFA500)
-            .setFooter("Hystats | Made by BlobFish#9669", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+            .setFooter("Hystats | Made by ambmt#6969", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
             .addFields(
                 { name: "Guild Master:", value: "`" + name + "`", inline: true},
                 { name: "Total Coins:", value: "`" + coins + "`", inline: true},
@@ -154,7 +154,7 @@ module.exports = {
                     .setTitle(':bar_chart: Guild Statistics')
                     .setDescription(`***[${guild.tag}] ${guild.name}***\n\n*Note: React to the emojis to scroll through pages*\n\u200b`)
                     .setColor(0xFFA500)
-                    .setFooter("Hystats | Made by BlobFish#9669", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                    .setFooter("Hystats | Made by ambmt#6969", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                     .addFields(
                         { name: "Guild Master:", value: "`" + name + "`", inline: true},
                         { name: "Total Coins:", value: "`" + coins + "`", inline: true},
@@ -221,7 +221,7 @@ module.exports = {
                     .setTitle(':bar_chart: Guild Statistics')
                     .setDescription(`***[${guild.tag}] ${guild.name}***\n\n*Note: React to the emojis to scroll through pages*\n\u200b`)
                     .setColor(0xFFA500)
-                    .setFooter("Hystats | Made by BlobFish#9669", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                    .setFooter("Hystats | Made by ambmt#6969", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
 
                     let arr = guild.ranks
                     let tmp = [];
@@ -244,7 +244,7 @@ module.exports = {
                     .setTitle(':bar_chart: Guild Statistics')
                     .setDescription(`***[${guild.tag}] ${guild.name}***\n\n*Note: React to the emojis to scroll through pages*`)
                     .setColor(0xFFA500)
-                    .setFooter("Hystats | Made by BlobFish#9669", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
+                    .setFooter("Hystats | Made by ambmt#6969", 'https://cdn.discordapp.com/attachments/686410633989587022/748091989903409152/pixil-frame-0_1.png')
                     .addFields(
                             { name: "\u200b", value: "**Quakecraft:**\n" + "`" + guild.guildExpByGameType.QUAKECRAFT.toLocaleString() + "`\n\n" + "**VampireZ:**\n" + "`" + guild.guildExpByGameType.VAMPIREZ.toLocaleString() + "`\n\n" + "**Build Battle:**\n" + "`" + guild.guildExpByGameType.BUILD_BATTLE.toLocaleString() + "`\n\n" + "**Duels:**\n" + "`" + guild.guildExpByGameType.DUELS.toLocaleString() + "`\n\n" + "**Cops And Crims:**\n" + "`" + guild.guildExpByGameType.MCGO.toLocaleString() + "`\n\n" + "**Murder Mystery:**\n" + "`" + guild.guildExpByGameType.MURDER_MYSTERY.toLocaleString() + "`\n\n" + "**Walls:**\n" + "`" + guild.guildExpByGameType.WALLS.toLocaleString() + "`" , inline: true},
                             { name: "\u200b", value: "**Turbo Kart Racers:**\n" + "`" + guild.guildExpByGameType.GINGERBREAD.toLocaleString() + "`\n\n" + "**Bedwars:**\n" + "`" + guild.guildExpByGameType.BEDWARS.toLocaleString() + "`\n\n" + "**Warlords:**\n" + "`" + guild.guildExpByGameType.BATTLEGROUND.toLocaleString() + "`\n\n" + "**Prototype:**\n" + "`" + guild.guildExpByGameType.PROTOTYPE.toLocaleString() + "`\n\n" + "**Skywars:**\n" + "`" + guild.guildExpByGameType.SKYWARS.toLocaleString() + "`\n\n" + "**TNT Games:**\n" + "`" + guild.guildExpByGameType.TNTGAMES.toLocaleString() + "`\n\n" + "**Mega Walls:**\n" + "`" + guild.guildExpByGameType.WALLS3.toLocaleString() + "`", inline: true},

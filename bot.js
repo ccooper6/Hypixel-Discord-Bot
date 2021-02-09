@@ -9,6 +9,7 @@ const ascii = require('ascii-table');
 const table = new ascii().setHeading('Command', 'Status');
 const fetch = require('node-fetch')
 const Canvas = require('canvas');
+const pit = require('./commands/pit');
 
 
 //Fetch Commands//
@@ -91,8 +92,8 @@ client.on('message', async message => {
         else if(command === 'playercount') {
         client.commands.get('playercount').execute(message, fetch);
         }
-        else if(command === 'inventory') {
-        client.commands.get('inventory').execute(message, fetch, args, Canvas, fs);
+        else if(command === 'pit') {
+        client.commands.get('pit').execute(message, fetch);
         }
 })
 
@@ -100,4 +101,4 @@ client.on('message', async message => {
 //Bot Token//
 
 
-client.login(process.env.token);
+client.login("DISCORD BOT KEY HERE");
