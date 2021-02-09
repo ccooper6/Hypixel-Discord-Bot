@@ -5,7 +5,7 @@ module.exports = {
 	description: 'Watchdog!',
     execute(message, fetch) {
 
-        fetch(`https://api.hypixel.net/watchdogstats?key=642c5d12-b98b-4eda-98dd-dfb7c9d989a0`)
+        fetch(`https://api.hypixel.net/watchdogstats?key=API-KEY`)
         .then(res => res.json())
         .then(( json ) => {
             
